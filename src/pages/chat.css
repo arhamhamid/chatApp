@@ -1,0 +1,123 @@
+
+.mainChatDiv {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+    background: linear-gradient(120deg, #e1ffc7, #075e54);
+  }
+  
+  .mainNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #075e54; 
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .mainNav button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .selectedUser {
+    background-color: #075e54;
+    padding: 9px;
+    text-align: center;
+    font-size: 23px;
+    color: #fff;
+  }
+  
+  .getMsgs {
+    flex-grow: 1; 
+    overflow-y: auto; 
+    padding: 10px;
+  }
+  
+  .message {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    max-width: 70%;
+    word-wrap: break-word;
+  }
+  
+  .sent {
+    background-color: #9fc99f; 
+    color: #333;
+    align-self: flex-end;
+    margin-left: auto; 
+    width: 30%;
+
+  }
+  
+  .received {
+    background-color: #b6c2a1; 
+    color: #333; 
+    align-self: flex-start;
+    margin-right: auto; 
+width: 30%;
+  }
+  
+  .inputField {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #075e54; 
+    color: #ccc;
+  }
+  
+  .inputField input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 30px;
+  }
+  
+ .sendMsgBtn {
+    background-color: #9fc99f;
+    color: black; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    height: 44px;
+  }
+  .sendMsgBtn:hover{
+background-color:#7fa07f ;
+color:white ;
+  }
+  .chatImage{
+    height: 100%;
+    width:100%;
+  }
+
+  .textInput{
+    background-color:#9fc99f ;
+  }
+  #fileInput{
+    display: none;
+  }
+  .labelFile{
+margin: 0 20px;
+cursor: pointer;
+width: 30px;
+height: 40px;
+  }
+  .icon{
+    height: 35px;
+    width: 25px;
+    color:white;
+  }
+  .delBtn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: black;
+  }

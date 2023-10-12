@@ -1,0 +1,98 @@
+
+.mainsignin{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #e1ffc7, #075e54);
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.signinForm{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: white;
+    border-radius: 10%;
+}
+.signinForm h1{
+    text-align: center;
+    border-bottom: 1px solid rgb(149, 148, 148);
+    padding: 0 0 17px 0;
+}
+.signinForm form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .textField{
+    position: relative;
+    border-bottom: 2px solid #9c9b9b;
+    margin: 30px 0;
+}
+.textField input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background:none;
+    outline: none;
+}
+.signinForm p{
+    padding: 0 40px;
+}
+.textField label{ 
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #848383;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+.textField span::before{content: '';
+position: absolute;
+top: 40px;
+left: 0;
+width: 0%;
+height: 2px;
+background: #2691d9;
+}
+.textField input:focus ~ label,
+.textField input:valid ~ label{
+    top: -5px;
+    color: #2691d9;
+}
+.textField input:focus ~ span::before,
+.textField input:valid ~ span::before{
+width: 100%;
+}
+form button{
+    background-color: #2691d9;
+    width: 35%;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    color: #e9f4fb;
+    border: 1px solid #2691d9;
+}
+.googleBtn{
+    background-color: #97989a;
+    width: 50%;
+    margin-left: 10%;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    color: #e9f4fb;
+    border: 1px solid #e9f4fb;
+}
+
+/*  */
